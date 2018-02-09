@@ -1,3 +1,8 @@
+Hoisting
+Sometimes your JavaScript code will produce errors that may seem counterintuitive at first. Hoisting is another one of those topics that might be the cause of some of these tricky errors you're debugging.
+
+Hoisting - Before any JavaScript is executed, all function declarations are "hoisted" to the top of their current scope.
+
 What value will be printed to the console?
 
 sayHi("Julia");
@@ -37,4 +42,9 @@ function sayHi(name) {
 sayHi("Julia");
 
 *****Printed - Hello Julia -- Not many surprises here! The variable declaration and assignment are both already at the top of the function scope, so the function will print out: "Hello Julia"
+
+What you've learned so far:
+JavaScript hoists function declarations and variable declarations to the top of the current scope.
+Variable assignments are not hoisted.
+Declare functions and variables at the top of your scripts, so the syntax and behavior are consistent with each other.
 
